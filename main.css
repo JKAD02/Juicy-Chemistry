@@ -8,6 +8,9 @@ body {
   margin: 0px;
   box-sizing: border-box;
 }
+.usericon{
+  color: black;
+}
 
 #nav {
   top: 0;
