@@ -8,10 +8,7 @@ body {
   margin: 0px;
   box-sizing: border-box;
 }
-.usericon{
-  color: black;
-}
-
+/* navbar */
 #nav {
   top: 0;
   left: 0;
@@ -42,6 +39,9 @@ body {
   margin-top: 1%;
 }
 
+#searchhide {
+  display: none;
+}
 #search {
   display: inline-block;
   border: 1px solid transparent;
@@ -78,14 +78,18 @@ body {
 
 #table {
   border: 1px solid transparent;
-  width: 75%;
+  width: 100%;
   height: 35%;
   margin: auto;
 }
-
+#align {
+  border: 1px solid transparent;
+  width: 75%;
+  margin: auto;
+}
 #align > div {
   border: 1px solid transparent;
-  margin: 20px;
+  margin: 15px;
   color: #133b27;
   font-size: 15px;
   font-weight: bold;
@@ -115,7 +119,40 @@ body {
 #ani:hover .down {
   display: block;
 }
-
+@media only screen and (min-width: 989px) and (max-width: 1214px) {
+  #align {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 990px) {
+  #nav {
+    height: 90px;
+  }
+  #line {
+    display: none;
+  }
+  #table {
+    display: none;
+  }
+  #box {
+    width: 20%;
+    height: 50%;
+    margin-left: 10%;
+  }
+  #searchhide {
+    display: inline-block;
+  }
+  #search > input {
+    display: none;
+  }
+  .hide {
+    display: none;
+  }
+  #search {
+    width: 5%;
+  }
+}
+/* img1 */
 #img1 {
   border: 1px solid transparent;
   width: 100%;
@@ -128,7 +165,19 @@ body {
   height: 550px;
   width: 100%;
 }
-
+@media only screen and (min-width: 632px) and (max-width: 990px) {
+  #img1 > img {
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 632px) {
+  #img1 {
+    width: 150%;
+    margin: auto;
+    float: right;
+  }
+}
+/* img2 */
 #img2 {
   display: grid;
   grid-template-columns: repeat(4, auto);
@@ -158,7 +207,13 @@ body {
   width: 80%;
   margin: auto;
 }
-
+@media only screen and (min-width: 0px) and (max-width: 990px) {
+  #img2 {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+}
+/* img3 */
 #img3 {
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -205,12 +260,23 @@ body {
   background-color: black;
   border: 0px;
 }
+@media only screen and (min-width: 0px) and (max-width: 990px) {
+  #img3 {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+}
+/* img4  */
 #img4 {
   height: 700px;
   width: 100%;
   border: 1px solid transparent;
   text-align: center;
   background-color: whitesmoke;
+}
+.h1t {
+  color: #204e3c;
+  font-size: 55px;
 }
 .img4f {
   display: grid;
@@ -241,6 +307,30 @@ body {
   background-color: #204e3c;
   color: whitesmoke;
 }
+@media only screen and (min-width: 0px) and (max-width: 990px) {
+  #img4 {
+    height: 800px;
+  }
+  .h1t {
+    font-size: 40px;
+  }
+  .img4f {
+    width: 80%;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+  }
+  .img4f > div:nth-child(1) {
+    border-right: 1px solid transparent;
+    padding-right: 0px;
+  }
+  .img4f > div:nth-child(2) {
+    padding-left: 0px;
+  }
+  .img4f > div > img {
+    height: 50px;
+  }
+}
+/* container1  */
 #container1 {
   border: 0.1px solid transparent;
   height: 800px;
@@ -261,7 +351,7 @@ body {
 }
 .indiv2 {
   border: 0.1px solid transparent;
-  width: 49%;
+  width: 48%;
   height: 98%;
   display: inline-block;
   vertical-align: top;
@@ -269,9 +359,14 @@ body {
   color: white;
 }
 #img222 {
-  padding: 165px 0px 0px 0px;
+  padding-top: 165px;
   width: 70%;
   height: 60%;
+}
+#img223 {
+  width: 98%;
+  height: 70%;
+  padding-top: 125px;
 }
 .inblock {
   display: inline-block;
@@ -286,6 +381,25 @@ body {
   width: 100%;
   padding-top: 220px;
 }
+@media only screen and (min-width: 0px) and (max-width: 990px) {
+  #container1 {
+    height: 1600px;
+  }
+  .incontainer {
+    display: block;
+    width: 100%;
+    height: 50%;
+  }
+  #img222 {
+    height: 80%;
+    padding-top: 85px;
+  }
+  #img223 {
+    height: 90%;
+    padding-top: 45px;
+  }
+}
+/* container2  */
 #container2 {
   border: 1px solid transparent;
   width: 100%;
@@ -300,6 +414,10 @@ body {
   margin-top: 60px;
   text-align: center;
   font-size: 24px;
+}
+#boxxx1 > p {
+  font-size: 17px;
+  line-height: 25px;
 }
 #inbox {
   border: 1px solid transparent;
@@ -317,6 +435,7 @@ body {
 #imggg1 {
   border: 1px solid transparent;
   display: inline-block;
+  width: 30%;
 }
 .imggg2 {
   border: 1px solid transparent;
@@ -325,6 +444,36 @@ body {
   height: 100%;
   width: 66%;
 }
+.imggg2 > p {
+  font-size: 17px;
+}
+@media only screen and (min-width: 0px) and (max-width: 990px) {
+  #boxxx1 > h1 {
+    font-size: 30px;
+  }
+  #boxxx1 {
+    width: 90%;
+  }
+  #boxxx1 > p {
+    font-size: 15px;
+  }
+  #inbox {
+    width: 90%;
+  }
+  .boxxx2 {
+    width: 40%;
+  }
+  .imggg2 > h2 {
+    font-size: 18px;
+  }
+  .imggg2 > p {
+    font-size: 15px;
+  }
+  #container2 > div:nth-child(4) {
+    display: none;
+  }
+}
+/* container3  */
 #container3 {
   border: 1px solid transparent;
   width: 100%;
@@ -351,6 +500,10 @@ body {
   margin: auto;
   margin-top: 60px;
 }
+#imgmid {
+  margin: 0px 30px 0px 30px;
+}
+
 #tag2 > div {
   border: 1px solid transparent;
   width: 31%;
@@ -370,6 +523,9 @@ body {
   vertical-align: top;
   text-align: center;
 }
+.textsort {
+  font-size: 15px;
+}
 #dot {
   border: 1px solid black;
   width: 2%;
@@ -379,6 +535,40 @@ body {
   margin: auto;
   margin-top: 150px;
 }
+@media only screen and (min-width: 0px) and (max-width: 990px) {
+  #tag1 {
+    margin: 10px 0px 10px 0px;
+    font-size: 14px;
+  }
+  #tag2 > div {
+    width: 45%;
+  }
+  #tag2 > div:nth-child(3) {
+    display: none;
+  }
+  #tag2 > div:nth-child(2) {
+    margin: 0px 0px 0px 40px;
+  }
+  #tag3 > div {
+    width: 45%;
+  }
+  #tag3 > div:nth-child(3) {
+    display: none;
+  }
+  #tag3 > div:nth-child(2) {
+    margin: 0px 0px 0px 40px;
+  }
+  .textsort {
+    font-size: 12px;
+  }
+  #container3 {
+    height: 600px;
+  }
+  #dot {
+    display: none;
+  }
+}
+/* container4  */
 #container4 {
   border: 1px solid transparent;
   width: 100%;
@@ -391,18 +581,54 @@ body {
   height: 65%;
   margin: auto;
 }
-#tag4 > div {
+.taggg {
+  width: 49%;
   border: 1px solid transparent;
-  width: 24%;
+  display: inline-block;
+}
+#tag4 > div > div {
+  border: 1px solid transparent;
+  width: 48%;
   height: 100%;
   display: inline-block;
   margin-right: 5px;
   vertical-align: top;
 }
-#tag4 > div > div {
+#tag4 > div > div > div {
   border: 1px solid transparent;
   width: 100%;
   height: 40%;
+}
+.but {
+  border: 1px solid transparent;
+  margin: auto;
+  width: 30%;
+  margin-top: 55px;
+}
+.butt {
+  padding: 13px 40px;
+}
+@media only screen and (min-width: 0px) and (max-width: 990px) {
+  #container4 {
+    height: 2000px;
+  }
+  #tag4 {
+    width: 98%;
+    height: 86%;
+  }
+  .taggg {
+    width: 100%;
+    display: block;
+  }
+  #tag4 > div > div {
+    width: 48%;
+  }
+  .but {
+    width: 95%;
+  }
+  .butt {
+    padding: 15px 110px;
+  }
 }
 /* css-slider */
 #container5 {
@@ -420,6 +646,11 @@ body {
 .item > img {
   width: 100%;
 }
+@media only screen and (min-width: 0px) and (max-width: 990px) {
+  #container5 {
+    height: 150px;
+  }
+}
 /* last box */
 #container6 {
   width: 100%;
@@ -427,6 +658,12 @@ body {
   margin: auto;
   border: 1px solid transparent;
   background-color: #f4eee7;
+}
+#subo {
+  display: inline-block;
+  border: 1px solid transparent;
+  width: 66%;
+  height: 100%;
 }
 #subbotbox1 {
   width: 32%;
@@ -436,10 +673,10 @@ body {
   padding: 0px;
   margin-left: 10px;
   border: 1px solid transparent;
-  background-color: lightpink;
+  background-color: #e0c1c1;
 }
 .subbotbox {
-  width: 32%;
+  width: 48%;
   height: 100%;
   vertical-align: top;
   display: inline-block;
@@ -462,6 +699,18 @@ body {
   margin-top: 50px;
   display: inline-block;
   margin-left: 10px;
+}
+#subbotbox1 > h1 {
+  color: green;
+  text-align: center;
+  font-size: 35px;
+  padding: 10px;
+}
+.subbotbox > p {
+  font-size: 17px;
+  font-weight: bold;
+  font-family: calibri;
+  line-height: 24px;
 }
 #logo1 {
   height: 30px;
@@ -489,9 +738,6 @@ body {
   vertical-align: top;
   overflow: hidden;
 }
-#logoimg > div {
-  background-image: url(https://cdn.shopify.com/s/files/1/0058/7779/2832/files/Group_2046_2x_6B.png?v=1629128332);
-}
 #logoimg {
   border: 1px solid transparent;
   width: 70%;
@@ -499,7 +745,65 @@ body {
   margin-left: 130px;
   display: inline-block;
 }
-
+@media only screen and (min-width: 0px) and (max-width: 990px) {
+  #subbotbox1 {
+    width: 100%;
+    height: 20%;
+    margin-left: 0px;
+  }
+  #subbotbox1 > h1 {
+    font-size: 25px;
+    text-align: left;
+  }
+  #logo1 {
+    margin-left: 80px;
+  }
+  #mobi {
+    margin-top: -113px;
+    height: 100%;
+    width: 40%;
+    margin-left: 150px;
+  }
+  #subo {
+    width: 100%;
+    height: 80%;
+  }
+  .subbotbox {
+    width: 100%;
+    height: 70%;
+    margin-left: 20px;
+  }
+  .subbotbox > p {
+    font-size: 15px;
+  }
+  .subbotbox > h1 {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+  #container6 {
+    height: 1000px;
+  }
+  #logoimg {
+    display: none;
+  }
+  .suin {
+    height: 30%;
+  }
+  #innerimg1 {
+    width: 20%;
+    height: 70%;
+    margin-left: 30px;
+  }
+  #innerimg2 {
+    width: 20%;
+    height: 70%;
+    margin-top: 30px;
+  }
+  .subbotbox > h2,
+  .subbotbox > h3 {
+    font-size: 17px;
+  }
+}
 /* footer */
 #footerbox {
   width: 100%;
@@ -583,4 +887,15 @@ body {
   vertical-align: top;
   margin-top: 15px;
   font-size: 30px;
+}
+@media only screen and (min-width: 0px) and (max-width: 990px) {
+  .footersub {
+    display: none;
+  }
+  .footersub2 {
+    width: 46%;
+  }
+  .footersub3 {
+    width: 45%;
+  }
 }
