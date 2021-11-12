@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Oswald:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
+body {
+  font-family: "Work Sans", sans-serif;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.usericon{
+  color: black;
+}
+
+#nav {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 160px;
+  background-color: #f5f3ef;
+  border: 1px solid transparent;
+  position: sticky;
+}
+
+#box {
+  width: 15%;
+  height: 35%;
+  border: 1px solid transparent;
+  margin: auto;
+  margin-left: 43%;
+  margin-top: 1.5%;
+  display: inline-block;
+}
+
+#box > img {
+  width: 100%;
+}
+
+#line {
+  border: 1px solid #d4cdcd;
+  width: 100%;
+  margin-top: 1%;
+}
+
+#search {
+  display: inline-block;
+  border: 1px solid transparent;
+  width: 25%;
+  height: 20%;
+  margin: auto;
+  margin-top: 3%;
+  float: right;
+}
+
+#search > input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 55%;
+  height: 50%;
+  color: #204e3c;
+  outline: none;
+  line-height: 1%;
+  font-size: 15px;
+}
+
+#search::placeholder {
+  color: #0f3f2c;
+  opacity: 1;
+  /* font-weight: bold; */
+  font-size: 15px;
+  font-family: "Work Sans", sans-serif;
+}
+
+#search > i {
+  margin-right: 4%;
+}
+
+#table {
+  border: 1px solid transparent;
+  width: 75%;
+  height: 35%;
+  margin: auto;
+}
+
+#align > div {
+  border: 1px solid transparent;
+  margin: 20px;
+  color: #133b27;
+  font-size: 15px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+#ani .down {
+  display: none;
+  border: 1px solid transparent;
+  background-color: #f5f3ef;
+  color: #133b27;
+  position: absolute;
+  z-index: 1;
+  padding: 18px;
+  line-height: 30px;
+}
+
+.down > div {
+  display: block;
+}
+
+.down > div:hover {
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+#ani:hover .down {
+  display: block;
+}
+body {
+    background: #FFFDF4;
+    /* margin-top: 200px; */
+}
+
+#mainTextBox {
+    margin: auto;
+    text-align: center;
+    width: 630px;
+    /* border: 1px solid */
+}
+
+#mainTextBox>h1 {
+    font-family: 'Zen Antique', serif;
+    font-weight: 400;
+    font-size: 60px;
+    color: #204E3C;
+}
+
+#mainTextBox>p {
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #00004F;
+}
+
+#sortBox {
+    width: 600px;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+
+.selectFilters {
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    font-size: 20px;
+    display: inline-block;
+    background: #FFFDF4;
+
+}
+
+#filter {
+    margin-left: 16%;
+}
+
+#itemDataBox {
+    display: grid;
+    width: 90%;
+    margin: auto;
+    margin-top: 60px;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 30px;
+}
+
+#itemDataBox div {
+    background: #D4E6E5;
+}
+
+img {
+    width: 100%;
+    height: 60%;
+}
+
+#nameDiv {
+    width: 80%;
+    height: 14%;
+    text-align: center;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+
+#p_name {
+    text-align: center;
+    font-family: 'Playfair Display';
+    font-size: 24px;
+    font-weight: 400;
+    width: 100%;
+}
+
+#p_purpose {
+    width: 80%;
+    margin-top: 2px;
+    text-align: center;
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 18px;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#p_rating {
+  
+    font-family: 'Playfair Display';
+    font-weight: 200;
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+    /* border: 3px solid #204E3C; */
+    text-align: center;
+    font-size:20px;
+
+}
+
+#p_price {
+    margin-top: 10px;
+    width: 80%;
+    padding: 0px;
+    margin: auto;
+    border: 3px solid #204E3C;
+}
+
+h3 {
+    margin-left: 5px;
+    display: inline-block;
+
+}
+
+h4 {
+    display: inline-block;
+    margin-left: 150px;
+}
+
+p {
+    font-size: 30px;
+}
+@media screen and (min-width:600px) and (max-width:1000px){
+    #itemDataBox {
+    margin-top: 30px;
+    grid-template-columns:50% 50%;
+    grid-gap: 30px;
+}
+}

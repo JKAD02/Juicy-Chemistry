@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+        body {
+            font-family: 'Ubuntu', sans-serif;
+            ;
+        }
+        #cartbox {
+            width: 60%;
+            width: 100%;
+            border: 2px solid yellow;
+            background-color: #FFFDF4;
+        }
+        #innerDiv {
+            text-align: center;
+            border-bottom: 1px solid #E7E7E7;
+            font-size: 70px;
+            height: 100px;
+            width: 100%;
+            background-color: #FFFDF4;
+            margin-bottom: 20px;
+        }
+        #cart {
+            border: 1px solid blue;
+            width: 100%;
+            color: #204E3C;
+        }
+        #total {
+            border: 1px solid blue;
+            width: 25%;
+            font-size: 30px;
+            margin-top: 20px;
+            background-color: #FFFDF4;
+            margin: auto;
+        }
+        #total div {
+            display: inline-block;
+        }
+        #p_name {
+            border: 1px solid red;
+            font-size: 18px;
+        }
+
+        #imageDivv {
+            border: 1px solid violet;
+            margin-left: 30px;
+            width: 10%;
+        }
+        #p_rating {
+            border: 1px solid red;
+            font-size: 13px;
+        }
+        #newDiv {
+            border: 1px solid red;
+            display: inline-block;
+            width: 20%;
+            height: 150px;
+            vertical-align: top;
+            margin-left: 30px;
+        }
+        #priceTag {
+            border: 1px solid red;
+            font: 10px;
+            display: inline-block;
+        }
+        #btn {
+            border: 1px solid red;
+            text-align: center;
+            display: inline-block;
+            float: right;
+            padding: 10px 20px;
+            background-color: darkslategrey;
+            color: whitesmoke;
+            margin-top: 10px;
+        }
+        .subtotal {
+            font-weight: bold;
+        }
+        #bottom_box {
+            border-top: 1px soild red;
+            width: 100%;
+        }
+        #payment {
+            float: right;
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="cartbox">
+        <div id="innerDiv">
+            <a href="cleansers.html" style="float: left; color: #204E3C; text-decoration: none;"> &larr;</a>
+            <span style="color: #204E3C;">CART</span>
+        </div>
+        <div id="cart"></div>
+        <div id="bottom_box">
+            <div id="total">
+                <div class="subtotal">Subtotal:</div>
+                <div id="payment"></div>
+                <br />
+                <div style="font-size: 10px;">or 4 interest-free payments of ₹175.00 with
+                </div>
+                <br />
+                <button
+                    style="padding: 20px 100px; background-color: #204E3C; color: white; margin-top: 10px; font-size: 15px;border: 1px solid transparent;">PROCEED
+                    TO PAYMENT</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
+<script>
+    var cart = JSON.parse(localStorage.getItem("cartData"));
+    console.log(cart);
+    displayProductList(cart);
+
+    function displayProductList(productsList){
+
+
+        productsList.map(function (item, index) {
+            var imageDiv = document.createElement("div");
+            imageDiv.setAttribute("id","imageDiv")
+            var newDiv = document.createElement("div");
+            newDiv.setAttribute("id", "newDiv");
+
+
+            var imageurl = document.createElement("img");
+            imageurl.setAttribute("src", item.productImageUrl);
+            imageurl.setAttribute("id", "imageDivv")
+
+            var nameHead = document.createElement("h1");
+            nameHead.setAttribute("id", "p_name");
+            nameHead.textContent = item.productName;
+
+
+            var rating = document.createElement("h2");
+            rating.setAttribute("id", "p_rating");
+            rating.textContent = "rating" + " ( " + item.totalCustomers + " Reviews ) ";
+
+
+            var price = document.createElement("h3");
+            price.setAttribute("id", "priceTag")
+            price.textContent = "₹" + item.productPrice;
+
+            var remove = document.createElement("button")
+            remove.addEventListener("click", removeItem);
+            remove.setAttribute("id", "btn");
+            remove.textContent = "Delete";
+
+            var line = document.createElement("hr");
+
+            newDiv.append(nameHead, rating, price, remove);
+            imageDiv.append(imageurl, newDiv, line);
+            document.getElementById("cart").append(imageDiv);
+
+
+
+            
+            function removeItem(event) {
+                event.preventDefault();
+                event.target.parentNode.parentNode.remove();
+                localStorage.setItem("cartData",JSON.stringify("cart"));
+                
+            }
+
+            
+
+
+        });
+
+
+
+    }
+    var total = cart.reduce(function (acc, cv) {
+        return acc + cv.productPrice
+    }, 0);
+    document.querySelector("#payment").textContent = "₹" + total;
+
+
+</script>
