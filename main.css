@@ -8,6 +8,10 @@ body {
   margin: 0px;
   box-sizing: border-box;
 }
+.usericon {
+  color: black;
+  margin-right: 15px;
+}
 /* navbar */
 #nav {
   top: 0;
@@ -29,7 +33,7 @@ body {
   display: inline-block;
 }
 
-#box > img {
+#box > a > img {
   width: 100%;
 }
 
@@ -111,6 +115,14 @@ body {
   display: block;
 }
 
+.cle:hover {
+  color: black;
+  border-bottom: 1px solid black;
+}
+.cle {
+  color: #0f3f2c;
+  text-decoration: underline solid transparent;
+}
 .down > div:hover {
   color: black;
   border-bottom: 1px solid black;

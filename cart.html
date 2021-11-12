@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/fbb71ac23c.js" crossorigin="anonymous"></script>
-
-    <title>Document</title>
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <title>Your Shopping Cart-Juicy Chemistry</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
         @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
@@ -24,6 +24,7 @@
 
         .usericon {
             color: black;
+            margin-right: 20px;
         }
 
         #nav {
@@ -46,7 +47,7 @@
             display: inline-block;
         }
 
-        #box>img {
+        #box>a>img {
             width: 100%;
         }
 
@@ -117,6 +118,16 @@
             line-height: 30px;
         }
 
+        .cle:hover {
+            color: black;
+            border-bottom: 1px solid black;
+        }
+
+        .cle {
+            color: #0f3f2c;
+            text-decoration: underline solid transparent;
+        }
+
         .down>div {
             display: block;
         }
@@ -144,8 +155,8 @@
         #innerDiv {
             text-align: center;
             border-bottom: 1px solid #E7E7E7;
-            font-size: 70px;
-            height: 100px;
+            font-size: 40px;
+            height: 60px;
             width: 100%;
             background-color: #FFFDF4;
             margin-bottom: 20px;
@@ -235,7 +246,7 @@
             margin-top: 10px;
             font-size: 15px;
             border: 1px solid transparent;
-            margin-left: 45px
+            margin-left: 30px;
         }
     </style>
 
@@ -244,8 +255,10 @@
 <body>
     <div id="nav">
         <div id="box">
-            <img src="https://cdn.shopify.com/s/files/1/0402/0597/5719/files/Juicy_Chemistry_Logo_64946475-1d2a-48bb-af35-514c95839e36.png?v=1625665364"
-                alt="juicychemistry">
+            <a href="homepage.html">
+                <img src="https://cdn.shopify.com/s/files/1/0402/0597/5719/files/Juicy_Chemistry_Logo_64946475-1d2a-48bb-af35-514c95839e36.png?v=1625665364"
+                    alt="juicychemistry">
+            </a>
         </div>
         <div id="search">
             <input type="text" placeholder="Search" style="text-transform: capitalize;">
@@ -260,10 +273,16 @@
                 <div id="ani">FACE CARE <i class="fa fa-angle-down" style="color:#0f3f2c; font-size: 18px;"></i>
                     <span class="down">
                         <div style="border: 1px solid #0f3f2c;"></div>
-                        <div style="padding-top: 20px;">CLEANSERS</div>
-                        <div>TONERS</div>
+                        <a href="cleansers.html" class="cle">
+                            <div style="padding-top: 20px;">CLEANSERS</div>
+                        </a>
+                        <a href="toners.html" class="cle">
+                            <div>TONERS</div>
+                        </a>
+                        <a href="facialOils.html" class="cle">
+                            <div>FACIAL OILS</div>
+                        </a>
                         <div>MOISTURISERS</div>
-                        <div>FACIAL OILS</div>
                         <div>SUNSCREEN</div>
                         <div>EYE CARE</div>
                         <div>LIP CARE</div>
@@ -341,7 +360,7 @@
                 <div style="font-size: 10px;">or 4 interest-free payments of ₹175.00 with
                 </div>
                 <br />
-                <a href="shipping.html" ><button class="pay">PROCEED TO PAYMENT</button></a>
+                <a href="shipping.html"><button class="pay">PROCEED TO PAYMENT</button></a>
             </div>
         </div>
 
