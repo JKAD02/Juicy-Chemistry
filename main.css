@@ -9,6 +9,10 @@ body {
   box-sizing: border-box;
 }
 /* navbar */
+.usericon {
+  color: black;
+  margin-right: 15px;
+}
 #nav {
   top: 0;
   left: 0;
@@ -29,7 +33,7 @@ body {
   display: inline-block;
 }
 
-#box > img {
+#box > a > img {
   width: 100%;
 }
 

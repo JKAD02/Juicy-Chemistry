@@ -5,6 +5,10 @@ body {
   margin: 0px;
   box-sizing: border-box;
 }
+.usericon {
+  color: black;
+  margin-right: 15px;
+}
 
 #nav {
   top: 0;
@@ -26,7 +30,7 @@ body {
   display: inline-block;
 }
 
-#box > img {
+#box > a > img {
   width: 100%;
 }
 
