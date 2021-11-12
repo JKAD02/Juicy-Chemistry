@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Shipping Details</title>
+    <style>
+        #leftc {
+            margin: auto;
+            width: 52%;
+            height: 1020px;
+        }
+
+        #juicylogo {
+            margin-left: 35%;
+            margin-top: 5%;
+            width: 45%;
+            height: 90px;
+        }
+
+        #juicylogo>img {
+            width: 75%;
+            margin: auto;
+        }
+
+        #clcart {
+            margin-top: 1%;
+            color: grey;
+            margin-left: 35%;
+            display: inline-block;
+        }
+
+        #clinfo {
+            margin-top: 1%;
+            color: black;
+            margin-left: 1%;
+            display: inline-block;
+        }
+
+        #clship {
+            margin-top: 1%;
+            color: grey;
+            margin-left: 1%;
+            display: inline-block;
+        }
+
+        #cntinfo {
+            margin-top: 1%;
+            margin: auto;
+            margin-left: 15%;
+            width: 75%;
+            border: 1px solid transparent;
+            display: inline-block;
+            height: 50px;
+        }
+
+        #emailc {
+            width: 75%;
+            height: 45px;
+            margin: auto;
+            margin-left: 14%;
+            border-radius: 5px;
+            border: 1px solid #dddddd;
+        }
+
+        #checkbox {
+            margin-left: 14%;
+            display: inline-block;
+        }
+
+        #checkboxupdate {
+            display: inline-block;
+            color: #919191;
+        }
+
+        #inputname {
+            margin-left: 14%;
+        }
+
+        .flname {
+            display: inline-block;
+            width: 43%;
+            height: 45px;
+            border-radius: 5px;
+            border: 1px solid #dddddd;
+        }
+
+        .properlocation {
+            width: 75%;
+            height: 45px;
+            margin: auto;
+            margin-left: 14%;
+            border-radius: 5px;
+            border: 1px solid #dddddd;
+        }
+
+        .inputscp {
+            display: inline-block;
+            width: 28%;
+            height: 45px;
+            border-radius: 5px;
+            border: 1px solid #dddddd;
+        }
+
+        #rtrncart {
+            display: inline-block;
+            color: #b6a072;
+            margin: auto;
+            margin-left: 1%;
+        }
+
+        #bottomofshipment {
+            border: 1px solid transparent;
+            height: 100px;
+            width: 85%;
+            margin-left: 14%;
+            margin-top: 1%;
+        }
+
+        #btntoshipp {
+            height: 55px;
+            width: 160px;
+            margin-left: 46%;
+            background-color: #8f9365;
+            color: white;
+            font-family: sans-serif;
+            border-radius: 5px;
+            font-weight: bold;
+            border: 0;
+        }
+
+        #bottomthngs {
+            border: 1px solid transparent;
+            height: 45px;
+            width: 65%;
+            margin-left: 11%;
+            margin-top: 2%;
+        }
+
+        .bottomspan {
+            margin-left: 4%;
+            text-decoration: none;
+            color: #b6a072;
+            font-size: 14px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="leftc">
+        <div id="juicylogo">
+            <img src="https://cdn.shopify.com/s/files/1/0058/7779/2832/files/JC_Logo_NewWeb_B.png?78299"
+                alt="juicychemistry" />
+        </div>
+        <a style="text-decoration: none" href="#" target="_self">
+            <div id="clcart">Cart <i class="fa fa-angle-right"
+                    style="color:#b9bb97; font-size: 15px; margin-left: 10px;"></i></div>
+        </a>
+        <a style="text-decoration: none" href="#">
+            <div id="clinfo">Information<i class="fa fa-angle-right"
+                    style="color:#b9bb97; font-size: 15px; margin-left: 10px;"></i></div>
+        </a>
+        <a style="text-decoration: none" href="#">
+            <div id="clship">Shipping<i class="fa fa-angle-right"
+                    style="color:#b9bb97; font-size: 15px; margin-left: 10px;"></i></div>
+        </a>
+        <a style="text-decoration: none" href="#">
+            <div id="clship">Payment</div>
+        </a>
+        <div id="cntinfo">
+            <p style="font-size: 20px; font-family: sans-serif;display: inline-block;">Contact Information</p>
+            <p style="font-size: 14px; font-family: sans-serif; margin-left: 30%; display: inline-block;">Already have
+                an account? <a href="#" style="color: #9ba09d;">Login</a></p>
+        </div>
+        <br>
+        <br>
+        <input id="emailc" type="text" placeholder="Email" />
+        <br>
+        <input id="checkbox" type="checkbox" />
+        <a href="#">
+            <p id="checkboxupdate">Email me with news and offers</p>
+        </a>
+        <p style="font-size: 20px; margin-left: 14%; font-family: sans-serif;">Shipping address</p>
+        <div id="inputname">
+            <input class="flname" id="frstname" type="text" placeholder="First name" />
+            <input class="flname" id="lstname" type="text" placeholder="Last name" />
+        </div>
+        <br>
+        <input class="properlocation" id="addressd" type="text" placeholder="Address">
+        <br>
+        <br>
+        <input class="properlocation" id="aprtsn" type="text" placeholder="Apartments,suite,etc.(optional)">
+        <br>
+        <br>
+        <input class="properlocation" id="cityn" type="text" placeholder="City">
+        <br>
+        <br>
+        <div style="margin-left: 14%;">
+            <input class="inputscp" id="countryn" type="text" placeholder="Country/region" />
+            <input class="inputscp" id="staten" type="text" placeholder="State" />
+            <input class="inputscp" id="pinc" type="number" placeholder="PIN code" />
+        </div>
+        <br>
+        <input class="properlocation" id="phnen" type="text" placeholder="Phone">
+        <input id="checkbox" type="checkbox" />
+        <a href="#">
+            <p id="checkboxupdate">Send me the order details via WhatsApp.</p>
+        </a>
+        <br>
+        <input id="checkbox" type="checkbox" />
+        <a href="#">
+            <p id="checkboxupdate"> Save this information for next time</p>
+        </a>
+        <br>
+        <div id="bottomofshipment">
+            <br>
+            <br>
+            <a style="text-decoration: none" href="cart.html"><i class="fa fa-angle-left"
+                    style="color:#b9bb97; font-size: 15px;"></i>
+                <div id="rtrncart">Return to cart </div>
+            </a>
+            <button id="btntoshipp">Continue to payment</button>
+        </div>
+        <br>
+        <br>
+        <hr style="width: 74%; margin-left: 14%;margin-top: 2%;">
+        <div id="bottomthngs">
+            <span id="spantag">
+                <a class="bottomspan" href="#">Refund policy</a>
+                <a class="bottomspan" href="#">Shipping policy</a>
+                <a class="bottomspan" href="#">Privacy policy</a>
+                <a class="bottomspan" href="#">Terms of service</a>
+            </span>
+
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="shipping.js">
+
+</script>

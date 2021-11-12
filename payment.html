@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <style>
+        #paymentpagelogo{
+            width: 20%;
+            height: 80px;
+            margin: auto;
+            border: 1px solid transparent;
+        }
+        #paymentinfo{
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 35px;
+            color: #8f9365;
+            margin-top: 2%;
+        }
+        #paymentinputs{
+            border: 1px solid transparent;
+            margin: auto;
+            height: 450px;
+            width: 70%;
+            margin-left: 27%;
+        }
+        .paymentinputtag{
+            width: 35%;
+            height: 45px;
+            margin: auto;
+            margin-left: 14%;
+            border-radius: 5px;
+            border: 1px solid #dddddd;
+        }
+        #paynow{
+            width: 12%;
+            height: 45px;
+            border-radius: 5px;
+            margin-left: 3%;
+            background-color: darkslateblue;
+            color: white;
+            border: 0;
+        }
+        #paynow:hover{
+            background-color:#2d095f;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="paymentpagelogo">
+        <a href="#"><img style="width: 100%; height: 100%;" src="https://cdn.shopify.com/s/files/1/0058/7779/2832/files/JC_Logo_NewWeb_B.png?78299" alt="juicychemistry"/></a>
+    </div>
+    <br/>
+    <br/>
+    <hr style="margin: auto;">
+    <p id="paymentinfo">Payment Information</p>
+   
+    <div id="paymentinputs">
+        <p style="margin-left: 14%; font-size: 20px;color: maroon; font-family: sans-serif;">Enter your debit/credit card number</p>
+        <input class="paymentinputtag" id="cardn" type="number" placeholder="Debit/credit card number"/>
+        <br/>
+        <p style="margin-left: 14%; font-size: 20px;color: maroon; font-family: sans-serif;">Enter expiry date</p>
+        <input style="width:22%" class="paymentinputtag" type="text" placeholder="MM/YY"/>
+        <br/>
+        <p style="margin-left: 14%; font-size: 20px;color: maroon; font-family: sans-serif;">Enter CVV</p>
+        <input style="width:22%" class="paymentinputtag" id="cvvn" type="password" placeholder="CVV"/>
+        <button id="paynow">Pay now</button>
+
+    </div>
+</body>
+</html>
+<script src="payment.js">
+
+</script>
