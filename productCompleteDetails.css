@@ -1,0 +1,883 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Oswald:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
+body {
+  font-family: "Work Sans", sans-serif;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.usericon{
+  color: black;
+}
+
+#nav {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 160px;
+  background-color: #f5f3ef;
+  border: 1px solid transparent;
+  position: sticky;
+}
+
+#box {
+  width: 15%;
+  height: 35%;
+  border: 1px solid transparent;
+  margin: auto;
+  margin-left: 43%;
+  margin-top: 1.5%;
+  display: inline-block;
+}
+
+#box > img {
+  width: 100%;
+}
+
+#line {
+  border: 1px solid #d4cdcd;
+  width: 100%;
+  margin-top: 1%;
+}
+
+#search {
+  display: inline-block;
+  border: 1px solid transparent;
+  width: 25%;
+  height: 20%;
+  margin: auto;
+  margin-top: 3%;
+  float: right;
+}
+
+#search > input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 55%;
+  height: 50%;
+  color: #204e3c;
+  outline: none;
+  line-height: 1%;
+  font-size: 15px;
+}
+
+#search::placeholder {
+  color: #0f3f2c;
+  opacity: 1;
+  /* font-weight: bold; */
+  font-size: 15px;
+  font-family: "Work Sans", sans-serif;
+}
+
+#search > i {
+  margin-right: 4%;
+}
+
+#table {
+  border: 1px solid transparent;
+  width: 75%;
+  height: 35%;
+  margin: auto;
+}
+
+#align > div {
+  border: 1px solid transparent;
+  margin: 20px;
+  color: #133b27;
+  font-size: 15px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+#ani .down {
+  display: none;
+  border: 1px solid transparent;
+  background-color: #f5f3ef;
+  color: #133b27;
+  position: absolute;
+  z-index: 1;
+  padding: 18px;
+  line-height: 30px;
+}
+
+.down > div {
+  display: block;
+}
+
+.down > div:hover {
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+#ani:hover .down {
+  display: block;
+}
+
+
+
+body {
+    background: #FFFDF4;
+}
+
+#firstBox {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 80%;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+.productDetailsBox{
+    /* border: black 1px solid; */
+    width: 90%;
+}
+#productImage{
+    width:100%;
+    height: auto;
+    cursor:zoom-in;
+    /* border:1px solid red; */
+}
+#leftArrow{
+    border:1px solid black;
+    /* top:25%; */
+    margin-top:250px;
+    padding: 10px;
+    left:117px;
+    font-size: 40px;
+    position:absolute;
+    font-weight:bolder;
+    border-radius: 10px;
+}
+#rightArrow{
+    font-size: 40px;
+    left:44.5%;
+    /* top:25%; */
+    margin-top:250px;
+    border:1px solid black;
+    position: absolute;
+    font-weight:bolder;
+    padding: 10px;
+    border-radius: 10px;
+}
+.arrow:hover{
+    background-color: grey;
+    color:white;
+}
+
+#productName{
+    font-family: 'Zen Antique', serif;
+    font-weight: 400;
+    font-size: 40px;
+    color:#204E3C;
+    margin-top:0px;
+}
+#ratingTab{
+    font-weight: normal;
+}
+#productDescription{
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: normal;
+}
+.tickSymbol{
+    font-weight: bold;
+    color:#186937;
+}
+#priceDiv {
+    /* border: 1px solid red; */
+    background-color: #F4EEE6;
+    height:120px;
+}
+#priceBox {
+    display: inline-block;
+    width: 44%;
+    /* border: 1px solid blue; */
+}
+#emiBox {
+    display: inline-block;
+    width: 50%;
+   vertical-align: top;
+   padding:6px;
+   /* border-width: 10px; */
+    
+}
+.productPriceBox{
+    display: inline-block;
+    color:#3A6151;
+    padding:8px;
+    line-height: 0px;
+    /* border:1px solid red; */
+    vertical-align: top;
+    margin-bottom:0px;
+
+}
+#allTaxes{
+    font-size: 16px;
+    padding:8px;
+    /* border:1px solid blue; */
+}
+#emiBoxText{
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 26px;
+}
+#emiImage {
+    height: 17px;
+}
+#emiBoxSpan{
+    font-weight: bold;
+    font-size:20px;
+}
+
+#zestMoneyImage {
+    margin-top: 5px;
+}
+
+#sizeDiv {
+    width: 100%;
+    /* border: 1px solid black; */
+}
+#sizeBox {
+    display: inline-block;
+    width: 48%;
+    /* border: 1px solid green; */
+}
+#quantityBox {
+    margin-left: 20px;
+    display: inline-block;
+    width: 47%;
+    /* border: 1px solid green; */
+}
+label {
+    font-size: 18px;
+}
+
+#productWeight {
+    width: 100%;
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+    color: #176837;
+    border: 2px solid #176837;
+    background-color: #FFFDF4;
+    padding: 10px;
+}
+.quant {
+    width: 32%;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid green;
+    background-color: #FFFDF4;
+    font-weight: bold;
+}
+
+#addToCartDiv {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #0F2D26;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    /* border:1px solid red; */
+}
+
+/* this css part is for how to do it part of the website */
+
+#howtodoitMainDiv {
+    background-color: #F7CFC1;
+    text-align: center;
+}
+.howToDoItHeading{
+    text-align: center;
+    font-family: 'Zen Antique', serif;
+    font-weight: 400;
+    font-size: 40px;
+    padding: 50px;
+}
+#howToDoIt {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 30px;
+}
+#howToDoIt>div {
+    width: 100%;
+    /* border: 1px solid green; */
+
+}
+#howToDoItImage{
+    /* border:1px solid red; */
+    margin:auto;
+}
+#howToDoItTextBox {
+    width: 80%;
+    /* border: 1px solid red; */
+    text-align: left;
+    margin-left:30px;
+}
+.howToDoItTextBoxPara{
+    font-size: 17px;
+    font-weight:450;
+}
+
+/* this css part for Real Deal of the website */
+
+#realDealDiv {
+    background-color: #F4EEE6;
+    /* border:1px solid red; */
+}
+.Heading {
+    text-align: center;
+    font-family: 'Zen Antique', serif;
+    font-weight: 400;
+    font-size: 40px;
+    padding: 50px;
+
+}
+#realDealContent {
+    display: grid;
+    width: 75%;
+    margin: auto;
+    grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+    grid-gap: 10px;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+#realDealContent>div {
+    width: 100%;
+    /* border: 1px solid green; */
+}
+.realDealImage {
+    width: 30%;
+    height: 30%;
+    margin-left: 33%;
+    /* border: 1px solid teal; */
+
+}
+.realDealText {
+    text-align: center;
+    width:70%;
+    margin:auto;
+    font-weight: normal;
+    margin-top:20px;
+}
+#realDealKnowMore {
+    display: block;
+    font-size:20px;
+    font-weight: bold;
+    padding: 10px;
+    width:250px;
+    text-align: center;
+    margin:auto;
+    margin-top:50px;
+    border: 2px solid black;
+    background-color: #F4EEE6;
+}
+#realDealKnowMore:hover{
+    background-color:#204E3C;
+    color:white;
+}
+
+/* This Css part is for Asking why part */
+
+#askingWhyDiv {
+    background-color: #CF5950;
+}
+#askingWhyHeading {
+    padding: 30px;
+    color: white;
+    font-family: 'Zen Antique', serif;
+    font-weight: 10;
+    font-size: 40px;
+    text-align: center;
+    /* border: 1px solid black; */
+
+}
+
+#askingWhytext {
+    margin: auto;
+    font-size: 20px;
+    width: 700px;
+    color: white;
+    line-height: 29px;
+    margin-bottom: 50px;
+    font-weight: normal;
+}
+
+#askingWhyTableDiv {
+    display: grid;
+    margin: auto;
+    width: 90%;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 5%;
+    /* border: 1px solid blue; */
+
+}
+
+.askingWhyBox {
+    width: 100%;
+    border: 1px solid green;
+    background-color: #FFFDF4;
+}
+
+.askingWhyImage {
+    margin: 30px;
+    display: block;
+    /* border: 1px solid red; */
+}
+
+.askingWhyHead {
+    text-align: left;
+    margin-left: 30px;
+    font-size: 27px;
+}
+
+.askingWhyHeadText {
+    text-align: left;
+    margin-left: 30px;
+    width: 85%;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+/* This css part is for allow our ingrediants part */
+
+#allowOurImageDiv {
+    /* border: 1px solid red; */
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+}
+
+#allowOurImage {
+    width: 100%;
+    height: 100%;
+}
+
+#allowOurHeadingDiv {
+    display: inline-block;
+    /* border: 1px solid blue; */
+    width: 600px;
+    margin-top: 100px;
+    margin-left: 180px;
+    vertical-align: top;
+    margin-bottom: 50px;
+
+}
+
+#allowOurContentDiv {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 3%;
+}
+
+#allowOurHeading {
+    margin: auto;
+    font-family: 'Zen Antique', serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: #000000;
+    text-align: center;
+}
+
+.allowOurContentBox {
+    width: 100%;
+    /* border: 1px solid red; */
+    background-color: #FDDDD3;
+}
+
+.allowOurContentHead {
+    margin-left: 30px;
+    font-size: 25px;
+}
+
+.allowOurContentText1 {
+    margin-left: 30px;
+    width: 80%;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.allowOurContentText2 {
+    margin-left: 30px;
+    width: 80%;
+    color: #9C5E50;
+    font-size: 18px;
+    line-height: 27px
+}
+
+.allowOurContentText3 {
+    margin-left: 30px;
+    width: 80%;
+    color: #9C5E50;
+    font-size: 18px;
+    line-height: 27px
+}
+
+/* this css part for last Content of the website */
+
+#lastContentDiv {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 100px;
+}
+
+.lastContentBox {
+    width: 100%;
+    /* border: 1px solid green; */
+}
+
+#lastContentBox1 {
+    background-color: #F7CFC1;
+}
+
+#box1_Image {
+    width: 60%
+}
+
+#box1_textHead {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+#lastContentBox2 {
+    background-color: #D9B5B3;
+}
+
+#lastContentBox3 {
+    background-color: #F4EEE6;
+}
+
+#lastContentBox4 {
+    background-color: #FFFDF4;
+}
+
+#box1_contentDiv1 {
+    /* border: 1px solid red; */
+    width: 60%;
+    margin: auto;
+}
+
+.box1_contentImage {
+    display: inline-block;
+    /* border: solid 1px green; */
+    width: 25%;
+    vertical-align: top;
+}
+
+.box1_contentImageBox {
+    width: 50%;
+    margin-top: 120%;
+    margin-left: 25%;
+    /* border:1px solid red; */
+}
+
+.box1_contentText {
+    display: inline-block;
+    /* border: 1px solid green; */
+    width: 72%;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+/* this css part for box2 content of the last Content */
+
+#box2_Image {
+    width: 58%;
+    margin-left: 40%;
+    float: right;
+
+}
+
+#box2_textHead {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+#box2_textContent {
+    text-align: center;
+    width: 60%;
+    line-height: 27px;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#box2_logoDiv {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 3%;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.box2_logoBox {
+    width: 100%;
+    /* border:1px solid red; */
+}
+
+.box2_logoBoxImage {
+    width: 80px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box2_logoBoxText {
+    text-align: center;
+}
+
+#knowMoreButton {
+    width: 410px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    padding:10px;
+    border: 1px solid black;
+    background-color: #D9B5B3;
+}
+#knowMoreButton:hover{
+    background-color: #000000;
+    color:white;
+}
+
+@media screen and (min-width:600px) and (max-width:1000px){
+    #firstBox {
+        grid-template-columns: 100%;
+        width: 80%;
+        margin:auto;
+        
+        /* border:1px solid red; */
+    } 
+    .productDetailsBox{
+        /* border: black 1px solid; */
+        width: 100%;
+    }
+    #productName{
+        font-size: 30px;
+    }
+    #productImage{
+        width:100%;
+        margin:auto;
+        /* border:1px solid red; */
+    }
+    #leftArrow{
+        margin-top:25%;
+        padding: 10px;
+        left:10%;
+        font-size: 20px;
+    }
+    #rightArrow{
+        font-size: 20px;
+      left:84%;
+        margin-top:25%;
+        padding: 10px;
+       
+    }
+    .howToDoItHeading{
+        font-size: 30px;
+        padding: 20px;
+    }
+    #howToDoIt {
+        grid-template-columns:100%;
+        
+    }
+    #howToDoItTextBox {
+        margin-left:50px;
+    }
+    .Heading {
+        font-size: 30px;
+        padding: 20px;
+    
+    }
+    #realDealContent {
+        width: 85%;
+        grid-template-columns:30% 30% 30%
+    }
+    #askingWhyHeading {
+        padding: 30px;
+        font-size: 30px;
+    }
+    #askingWhytext {
+        width: 80%;
+    }
+    #askingWhyTableDiv {
+        grid-template-columns: 50% 50%;
+        grid-gap: 2.5%;
+        
+    }
+    #allowOurImageDiv {
+        width: 150px;
+        height: 150px;
+    }
+    #allowOurHeadingDiv {
+        width: 500px;
+        margin-top: 50px;
+        margin-left: 0px;
+    
+    }
+    #allowOurContentDiv {
+        grid-template-columns: 50% 50%;
+        grid-gap: 3%;
+    }
+    #lastContentDiv {
+        
+        grid-template-columns: 100%;
+        
+    }
+
+}
+@media screen and (min-width:100px) and (max-width:599px){
+    #firstBox {
+     /* border:1px solid red; */
+     width:90%;
+     margin:auto;
+     display: grid;
+     grid-template-columns: 100%;
+    } 
+    .productDetailsBox{
+        border: black 1px solid;
+        width: 100%;
+    }
+    #productName{
+        font-size: 30px;
+    }
+    #productImage{
+        width:100%;
+        margin:auto;
+        /* border:1px solid red; */
+    }
+    #leftArrow{
+        margin-top:25%;
+        padding: 10px;
+        left:10%;
+        font-size: 20px;
+    }
+    #rightArrow{
+        font-size: 20px;
+      left:84%;
+        margin-top:25%;
+        padding: 10px;
+       
+    }
+    #priceDiv {
+        height:140px;
+        width:110%;
+        /* border:1px solid red; */
+    }
+    #emiBox {
+        
+        width: 50%;
+       vertical-align: top;
+       padding:6px;
+       /* border-width: 10px; */
+        
+    }
+    #sizeDiv {
+        width: 110%;
+        /* border: 1px solid black; */
+    }
+    #quantityBox {
+        margin-left: 11px;
+    }
+    .quant {
+        width: 30%;
+    }
+    #addToCartDiv {
+        width: 110%;
+    }
+    .howToDoItHeading{
+        font-size: 30px;
+        padding: 20px;
+    }
+
+    #howToDoIt {
+        grid-template-columns:100%;
+        
+    }
+    #howToDoItImage{
+        width:90%;
+        margin:auto;
+    }
+    #howToDoItTextBox {
+        margin-left:50px;
+    }
+    .Heading {
+        font-size: 30px;
+        padding: 20px;
+    
+    }
+    #realDealContent {
+        width: 85%;
+        grid-template-columns:30% 30% 30%
+    }
+    #askingWhyHeading {
+        padding: 30px;
+        font-size: 30px;
+    }
+    #askingWhytext {
+        width: 80%;
+    }
+    #askingWhyTableDiv {
+        grid-template-columns: 100%;
+        grid-gap: 1%;
+        
+    }
+    #allowOurImageDiv {
+        width: 100px;
+        height: 100px;
+    }
+    #allowOurHeadingDiv {
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0px;
+        /* font-size:20px;
+         border: 1px solid blue; */
+    
+    }
+    #allowOurContentDiv {
+        grid-template-columns: 100%;
+        grid-gap: 3%;
+    }
+    #lastContentDiv {
+        grid-template-columns: 100%;
+        
+    }
+    #box1_contentDiv1 {
+        /* border: 1px solid red; */
+        width: 90%;
+    }
+    .box1_contentImage {
+        margin-top:40px;
+    }
+    .box1_contentText {
+        font-size: 16px;
+        
+    }
+    #box2_textHead {
+        width: 80%;
+    }
+    #box2_textContent {
+        width: 80%;
+        margin-top: 30px;
+        font-size: 16px;
+    }
+    #box2_logoDiv {
+        width: 60%;
+        display: grid;
+        grid-template-columns:100%;
+        grid-gap: 3%;
+        margin: auto;
+        margin-top: 60px;
+    }
+
+}

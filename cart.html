@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/fbb71ac23c.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+        @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Oswald:wght@500&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
+
+        body {
+            font-family: "Work Sans", sans-serif;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .usericon {
+            color: black;
+        }
+
+        #nav {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 160px;
+            background-color: #f5f3ef;
+            border: 1px solid transparent;
+            position: sticky;
+        }
+
+        #box {
+            width: 15%;
+            height: 35%;
+            border: 1px solid transparent;
+            margin: auto;
+            margin-left: 43%;
+            margin-top: 1.5%;
+            display: inline-block;
+        }
+
+        #box>img {
+            width: 100%;
+        }
+
+        #line {
+            border: 1px solid #d4cdcd;
+            width: 100%;
+            margin-top: 1%;
+        }
+
+        #search {
+            display: inline-block;
+            border: 1px solid transparent;
+            width: 25%;
+            height: 20%;
+            margin: auto;
+            margin-top: 3%;
+            float: right;
+        }
+
+        #search>input {
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid black;
+            width: 55%;
+            height: 50%;
+            color: #204e3c;
+            outline: none;
+            line-height: 1%;
+            font-size: 15px;
+        }
+
+        #search::placeholder {
+            color: #0f3f2c;
+            opacity: 1;
+            /* font-weight: bold; */
+            font-size: 15px;
+            font-family: "Work Sans", sans-serif;
+        }
+
+        #search>i {
+            margin-right: 4%;
+        }
+
+        #table {
+            border: 1px solid transparent;
+            width: 75%;
+            height: 35%;
+            margin: auto;
+        }
+
+        #align>div {
+            border: 1px solid transparent;
+            margin: 20px;
+            color: #133b27;
+            font-size: 15px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        #ani .down {
+            display: none;
+            border: 1px solid transparent;
+            background-color: #f5f3ef;
+            color: #133b27;
+            position: absolute;
+            z-index: 1;
+            padding: 18px;
+            line-height: 30px;
+        }
+
+        .down>div {
+            display: block;
+        }
+
+        .down>div:hover {
+            color: black;
+            border-bottom: 1px solid black;
+        }
+
+        #ani:hover .down {
+            display: block;
+        }
+
+        body {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        #cartbox {
+            width: 60%;
+            width: 100%;
+            border: 2px solid transparent;
+            background-color: #FFFDF4;
+        }
+
+        #innerDiv {
+            text-align: center;
+            border-bottom: 1px solid #E7E7E7;
+            font-size: 70px;
+            height: 100px;
+            width: 100%;
+            background-color: #FFFDF4;
+            margin-bottom: 20px;
+        }
+
+        #cart {
+            border: 1px solid transparent;
+            width: 50%;
+            margin: auto;
+            color: #204E3C;
+        }
+
+        #total {
+            border: 1px solid transparent;
+            width: 25%;
+            font-size: 30px;
+            margin-top: 20px;
+            background-color: #FFFDF4;
+            margin: auto;
+        }
+
+        #total div {
+            display: inline-block;
+        }
+
+        #p_name {
+            border: 1px solid transparent;
+            font-size: 18px;
+        }
+
+        #imageDivv {
+            border: 1px solid transparent;
+            margin-left: 30px;
+            width: 20%;
+        }
+
+        #p_rating {
+            border: 1px solid transparent;
+            font-size: 13px;
+        }
+
+        #newDiv {
+            border: 1px solid transparent;
+            display: inline-block;
+            width: 60%;
+            height: 150px;
+            vertical-align: top;
+            margin-left: 30px;
+        }
+
+        #priceTag {
+            border: 1px solid transparent;
+            font: 10px;
+            display: inline-block;
+        }
+
+        #btn {
+            border: 1px solid transparent;
+            text-align: center;
+            display: inline-block;
+            float: right;
+            padding: 10px 20px;
+            background-color: darkslategrey;
+            color: whitesmoke;
+            margin-top: 10px;
+        }
+
+        .subtotal {
+            font-weight: bold;
+        }
+
+        #bottom_box {
+            border-top: 1px soild transparent;
+            width: 100%;
+            margin-top: 100px;
+        }
+
+        #payment {
+            float: right;
+            border: 1px solid transparent;
+        }
+
+        .pay {
+            padding: 15px 60px;
+            background-color: #204E3C;
+            color: white;
+            margin-top: 10px;
+            font-size: 15px;
+            border: 1px solid transparent;
+            margin-left: 45px
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="nav">
+        <div id="box">
+            <img src="https://cdn.shopify.com/s/files/1/0402/0597/5719/files/Juicy_Chemistry_Logo_64946475-1d2a-48bb-af35-514c95839e36.png?v=1625665364"
+                alt="juicychemistry">
+        </div>
+        <div id="search">
+            <input type="text" placeholder="Search" style="text-transform: capitalize;">
+            <i class="fas fa-search fa-lg"></i>
+            <a href="login.html"><i class="far fa-user fa-lg usericon"></i></a>
+            <a href="cart.html"><i class="fas fa-shopping-bag fa-lg usericon"></i></a>
+        </div>
+        <div id="line">
+        </div>
+        <div id="table">
+            <div id="align">
+                <div id="ani">FACE CARE <i class="fa fa-angle-down" style="color:#0f3f2c; font-size: 18px;"></i>
+                    <span class="down">
+                        <div style="border: 1px solid #0f3f2c;"></div>
+                        <div style="padding-top: 20px;">CLEANSERS</div>
+                        <div>TONERS</div>
+                        <div>MOISTURISERS</div>
+                        <div>FACIAL OILS</div>
+                        <div>SUNSCREEN</div>
+                        <div>EYE CARE</div>
+                        <div>LIP CARE</div>
+                        <div>FACE MASKS</div>
+                        <div>FACE SCRUBS</div>
+                        <div>DUSTING POWDERS</div>
+                        <div>NEW</div>
+                        <div>BEST SELLERS</div>
+                        <div>VIEW ALL</div>
+                    </span>
+                </div>
+                <div id="ani">HAIR CARE <i class="fa fa-angle-down" style="color:#0f3f2c"></i>
+                    <span class="down">
+                        <div style="border: 1px solid #0f3f2c;"></div>
+                        <div style="padding-top: 20px;">OILS</div>
+                        <div>MASKS</div>
+                        <div>SHAMPOOS</div>
+                        <div>DRY SHAMPOOS</div>
+                        <div>CONDITIONER</div>
+                        <div>BEST SELLERS</div>
+                        <div>VIEW ALL</div>
+                    </span>
+                </div>
+                <div id="ani">BODY CARE <i class="fa fa-angle-down" style="color:#0f3f2c"></i>
+                    <span class="down">
+                        <div style="border: 1px solid #0f3f2c;"></div>
+                        <div style="padding-top: 20px;">CLEANSERS</div>
+                        <div>HAND & FOOT CARE</div>
+                        <div>GOURMET SOAPS</div>
+                        <div>BODY BUTTERS</div>
+                        <div>BODY OILS</div>
+                        <div>BODY WASHES</div>
+                        <div>DEODORANTS</div>
+                        <div>SCRUBS</div>
+                        <div>DUSTING POWDERS</div>
+                        <div>NEW</div>
+                        <div>BEST SELLERS</div>
+                        <div>AROMATHERAPY &nbsp &gt;</div>
+                        <div>ACCESSORIES</div>
+                        <div>VIEW ALL</div>
+                    </span>
+                </div>
+                <div>SHOP BY CONCERN</div>
+                <div>JUNIOR CARE</div>
+                <div>GIFTING</div>
+                <div id="ani">ABOUT <i class="fa fa-angle-down" style="color:#0f3f2c"></i>
+                    <span class="down">
+                        <div style="border: 1px solid #0f3f2c;"></div>
+                        <div style="padding-top: 20px;">CLEANSERS</div>
+                        <div>OUR STORY</div>
+                        <div>WHY CHOOSE JC</div>
+                        <div>CERTIFICATION</div>
+                        <div>TESTIMONALS</div>
+                        <div>MEDIA</div>
+                        <div>AWARDS</div>
+                        <div>RE-CYCLE & REWARD PROGRAM</div>
+                        <div>JC CARES</div>
+                        <div>BLOG</div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="cartbox">
+        <div id="innerDiv">
+            <a href="cleansers.html" style="float: left; color: #204E3C; text-decoration: none;"> &larr;</a>
+            <span style="color: #204E3C;">CART</span>
+        </div>
+        <div id="cart"></div>
+        <div id="bottom_box">
+            <div id="total">
+                <div class="subtotal">Subtotal:</div>
+                <div id="payment"></div>
+                <br />
+                <div style="font-size: 10px;">or 4 interest-free payments of ₹175.00 with
+                </div>
+                <br />
+                <a href="shipping.html" ><button class="pay">PROCEED TO PAYMENT</button></a>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
+<script>
+    var cart = JSON.parse(localStorage.getItem("cartData"));
+    console.log(cart);
+    displayProductList(cart);
+
+    function displayProductList(productsList) {
+        document.getElementById("cart").textContent = "";
+        productsList.map(function (item, index) {
+            var imageDiv = document.createElement("div");
+            imageDiv.setAttribute("id", "imageDiv")
+
+            var newDiv = document.createElement("div");
+            newDiv.setAttribute("id", "newDiv");
+
+            var imageurl = document.createElement("img");
+            imageurl.setAttribute("src", item.p_Image);
+            imageurl.setAttribute("id", "imageDivv")
+
+            var nameHead = document.createElement("h1");
+            nameHead.setAttribute("id", "p_name");
+            nameHead.textContent = item.p_Name;
+
+            var rating = document.createElement("h2");
+            rating.setAttribute("id", "p_rating");
+            rating.textContent = item.p_Weight;
+
+            var price = document.createElement("h3");
+            price.setAttribute("id", "priceTag")
+            price.textContent = "₹" + item.p_Price;
+
+            var remove = document.createElement("button")
+            remove.addEventListener("click", function () {
+                removeItem(index);
+            })
+            remove.setAttribute("id", "btn");
+            remove.textContent = "Delete";
+
+            var line = document.createElement("hr");
+
+            newDiv.append(nameHead, rating, price, remove);
+            imageDiv.append(imageurl, newDiv, line);
+            document.getElementById("cart").append(imageDiv);
+        });
+    }
+    function removeItem(index) {
+        cart.splice(index, 1);
+        console.log(cart);
+        localStorage.setItem("cartData", JSON.stringify(cart));
+        displayProductList(cart);
+        window.location.reload();
+    }
+
+    var total = cart.reduce(function (acc, cv) {
+
+        return acc + Number(cv.p_Price);
+    }, 0);
+    document.querySelector("#payment").textContent = "₹" + total;
+
+
+</script>
