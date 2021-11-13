@@ -125,8 +125,10 @@
           <input id="mob" type="text" placeholder="+91 8210584930">
           <input id="email" type="email" placeholder="Email">
           <input id="password" type="password" placeholder="Enter your password">
-          <button class="Btn" type="submit">CONTINUE</button>
         </form>
+        <div class="Btn">
+          <button id="btn1" type="submit">CONTINUE</button>
+        </div>
       </div>
     </div>
     <div id="socialIcons">
@@ -219,3 +221,23 @@
 </body>
 
 </html>
+<script>
+
+  document.getElementById("btn1").addEventListener("click", signUp);
+  var ar = JSON.parse(localStorage.getItem("userData")) || [];
+
+  function signUp() {
+    var userD = {
+      userfn: register.fname.value,
+      userln: register.lname.value,
+      usermob: register.mob.value,
+      userEmail: register.email.value,
+      userPass: register.password.value,
+    }
+    ar.push(userD);
+    localStorage.setItem("userData", JSON.stringify(ar))
+
+    window.location = "login.html"
+  }
+
+</script>

@@ -204,18 +204,25 @@ input {
   width: 400px;
   height: 30px;
 }
-form button {
+.Btn{
+  margin: auto;
+  border: 1px solid transparent;
+  width: 423px;
+}
+#btn1{
+  border: 1px solid  transparent;
   padding: 15px;
   width: 423px;
   margin: auto;
-  margin-top: 20px;
+  /* margin-top: 20px; */
+  /* margin-left: 386px; */
   background-color: #0f2d26;
   color: white;
   cursor: pointer;
   font-size: 18px;
   box-sizing: border-box;
 }
-form button:hover {
+#btn1:hover {
   /* margin: 5px; */
   padding: 15px;
   width: 423px;
