@@ -1,7 +1,7 @@
 var productsList = [
   {
     productType: "Cleansers",
-    productImageUrl: "http://surl.li/aoiim",
+    productImageUrl: "https://cdn.shopify.com/s/files/1/0058/7779/2832/products/limegingersoap_400x.jpg?v=1629376337",
     productName: "Lime, Ginger and Rice Soap",
     productPurpose: "For Tanning",
     productPrice: 412.5,
@@ -9,7 +9,10 @@ var productsList = [
     productWeight:"100 GMS",
     totalRatings: 50,
     totalCustomers: 10,
-    imageUrl : ["http://surl.li/aqnux","http://surl.li/aqnva","http://surl.li/aqcbx","http://surl.li/aqdpv"],
+    imageUrl : ["https://cdn.shopify.com/s/files/1/0058/7779/2832/products/KZ7_2346_1024x1024.png?v=1634729432",
+    "https://cdn.shopify.com/s/files/1/0058/7779/2832/products/0016_1_1024x1024.jpg?v=1629400505",
+    "https://cdn.shopify.com/s/files/1/0058/7779/2832/products/Limesoapback_1024x1024.jpg?v=1629376613",
+    "https://cdn.shopify.com/s/files/1/0058/7779/2832/files/lime_ginger_soap.png?v=1629521045" ],
   },
   {
     productType: "Cleansers",
