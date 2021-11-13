@@ -16,7 +16,7 @@ var productsList = [
   },
   {
     productType: "Cleansers",
-    productImageUrl: "http://surl.li/aoiip",
+    productImageUrl: "https://cdn.shopify.com/s/files/1/0058/7779/2832/products/Carrot_Rosehip_400x.png?v=1629401601",
     productName: "Carrot, Rosehip and Neroli Soap",
     productPurpose: "For Pigmentation",
     productPrice: 480,
@@ -24,11 +24,15 @@ var productsList = [
     productWeight:"100 GMS",
     totalRatings: 50,
     totalCustomers: 20,
-    imageUrl : ["http://surl.li/aqnux","http://surl.li/aqnva","http://surl.li/aqcbx","http://surl.li/aqdpv"],
+    imageUrl : ["https://cdn.shopify.com/s/files/1/0058/7779/2832/products/KZ7_2346_1024x1024.png?v=1634729432",
+    "https://cdn.shopify.com/s/files/1/0058/7779/2832/products/0016_1_1024x1024.jpg?v=1629400505",
+    "https://cdn.shopify.com/s/files/1/0058/7779/2832/products/Limesoapback_1024x1024.jpg?v=1629376613",
+    "https://cdn.shopify.com/s/files/1/0058/7779/2832/files/lime_ginger_soap.png?v=1629521045"    
+    ],
   },
   {
     productType: "Cleansers",
-    productImageUrl: "http://surl.li/aoijd",
+    productImageUrl: "https://cdn.shopify.com/s/files/1/0058/7779/2832/products/damaskrosesaffronsoap_400x.png?v=1629443001",
     productName: "Damask Rose, Geranium and Saffron Soap",
     productPurpose: "For Brighter Skin",
     productPrice: 440,
@@ -36,11 +40,15 @@ var productsList = [
     productWeight:"100 GMS",
     totalRatings: 60,
     totalCustomers: 15,
-    imageUrl : ["http://surl.li/aqnux","http://surl.li/aqnva","http://surl.li/aqcbx","http://surl.li/aqdpv"],
+    imageUrl : ["https://cdn.shopify.com/s/files/1/0058/7779/2832/products/KZ7_2346_1024x1024.png?v=1634729432",
+    "https://cdn.shopify.com/s/files/1/0058/7779/2832/products/0016_1_1024x1024.jpg?v=1629400505",
+    "https://cdn.shopify.com/s/files/1/0058/7779/2832/products/Limesoapback_1024x1024.jpg?v=1629376613",
+    "https://cdn.shopify.com/s/files/1/0058/7779/2832/files/lime_ginger_soap.png?v=1629521045"    
+    ],
   },
   {
     productType: "Cleansers",
-    productImageUrl: "http://surl.li/aoijk",
+    productImageUrl: "https://cdn.shopify.com/s/files/1/0058/7779/2832/products/TeaTreeRosemary_400x.png?v=1629444642",
     productName: "Tea Tree, Neem and Rosemary Soap",
     productPurpose: "Antibacterial",
     productPrice: 400,
@@ -48,11 +56,15 @@ var productsList = [
     productWeight:"100 GMS",
     totalRatings: 50,
     totalCustomers: 10,
-    imageUrl : ["http://surl.li/aqnux","http://surl.li/aqnva","http://surl.li/aqcbx","http://surl.li/aqdpv"],
+    imageUrl : ["https://cdn.shopify.com/s/files/1/0058/7779/2832/products/KZ7_2346_1024x1024.png?v=1634729432",
+    "https://cdn.shopify.com/s/files/1/0058/7779/2832/products/0016_1_1024x1024.jpg?v=1629400505",
+    "https://cdn.shopify.com/s/files/1/0058/7779/2832/products/Limesoapback_1024x1024.jpg?v=1629376613",
+    "https://cdn.shopify.com/s/files/1/0058/7779/2832/files/lime_ginger_soap.png?v=1629521045"    
+    ],
   },
   {
     productType: "Cleansers",
-    productImageUrl: "http://surl.li/aoijl",
+    productImageUrl: "https://cdn.shopify.com/s/files/1/0058/7779/2832/products/Cucumber_400x.png?v=1629442640",
     productName: "Cucumber, Matcha and Spearmint Soap",
     productPurpose: "For Acne-prone Skin",
     productPrice: 440,
@@ -60,11 +72,15 @@ var productsList = [
     productWeight:"100 GMS",
     totalRatings: 60,
     totalCustomers: 30,
-    imageUrl : ["http://surl.li/aqnux","http://surl.li/aqnva","http://surl.li/aqcbx","http://surl.li/aqdpv"],
+    imageUrl : ["https://cdn.shopify.com/s/files/1/0058/7779/2832/products/KZ7_2346_1024x1024.png?v=1634729432",
+    "https://cdn.shopify.com/s/files/1/0058/7779/2832/products/0016_1_1024x1024.jpg?v=1629400505",
+    "https://cdn.shopify.com/s/files/1/0058/7779/2832/products/Limesoapback_1024x1024.jpg?v=1629376613",
+    "https://cdn.shopify.com/s/files/1/0058/7779/2832/files/lime_ginger_soap.png?v=1629521045"    
+    ],
   },
   {
     productType: "Cleansers",
-    productImageUrl: "http://surl.li/aoijo",
+    productImageUrl: "https://cdn.shopify.com/s/files/1/0058/7779/2832/products/Papaya_400x.png?v=1629443805",
     productName: "Papaya, Apricot and Mandarin Soap",
     productPurpose: "For Dry Skin",
     productPrice: 440,
@@ -72,7 +88,11 @@ var productsList = [
     productWeight:"100 GMS",
     totalRatings: 10,
     totalCustomers: 10,
-    imageUrl : ["http://surl.li/aqnux","http://surl.li/aqnva","http://surl.li/aqcbx","http://surl.li/aqdpv"],
+    imageUrl : ["https://cdn.shopify.com/s/files/1/0058/7779/2832/products/KZ7_2346_1024x1024.png?v=1634729432",
+    "https://cdn.shopify.com/s/files/1/0058/7779/2832/products/0016_1_1024x1024.jpg?v=1629400505",
+    "https://cdn.shopify.com/s/files/1/0058/7779/2832/products/Limesoapback_1024x1024.jpg?v=1629376613",
+    "https://cdn.shopify.com/s/files/1/0058/7779/2832/files/lime_ginger_soap.png?v=1629521045"    
+    ],
   },
 ];
 
